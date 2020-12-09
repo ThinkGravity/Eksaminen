@@ -1,0 +1,391 @@
+body{
+    margin:0;
+    background-color: #ffffff;
+    font-family: Verdana, sans-serif;
+}
+
+/*Indholds tekst*/
+.main{
+    color: #000000;
+    text-align: center;
+    padding: 16px;
+    margin-top: 30px;
+}
+
+/*Navigationsbar*/
+.navBar{
+    overflow: hidden;
+    background-color: #2A2A2A;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.navBar a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navBar a:hover{
+    background: #ddd;
+    color: #2A2A2A;
+}
+
+.imageFrame{
+    max-width: 80%;
+    max-height: 600px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    display: inline-block;
+}
+
+.topics img{
+    text-align: center;
+    max-width: 600px;
+    max-height: 500px;
+    margin: 15px 15px;
+    position: relative;
+}
+
+.topics p{
+    margin: 15px auto;
+}
+
+.topics ul{
+    text-align: center;
+}
+
+.profile{
+    font-size: 12pt;
+}
+
+.profile img{
+    width: 500px;
+    height: 500px;
+    padding: 0;
+    margin: 0px 20px 60px 50px;
+    text-align: left;
+    float: left;
+}
+
+.profile h1{
+    font-size: 36pt;
+}
+
+.profile h2{
+    text-align: left;
+}
+
+.profile p,ul{
+    text-align: left;
+}
+
+.profile ul{
+    list-style-type: none;
+    display: block;
+}
+
+.profile .iconImg{
+    width: 32px;
+    height: 32px;
+    margin: 0 5px;
+    float: none;
+}
+
+h1{
+    font-size: 50pt;
+    text-align: center;
+    clear: both;
+}
+
+footer{
+    height: 40px;
+    line-height: 40px;
+    background-color: #2A2A2A;
+    text-align: center;
+    position: relative;
+}
+
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, #FADCE0, white, #FADCE0);
+    clear: both;
+}
+
+.infoDiv div{
+    max-width: 80%;
+    max-height: 600px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    display: inline-block;
+}
+
+.popUpBox{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.popUpContent{
+    max-width: 50%;
+    max-height: 60%;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.8);
+}
+
+.popUpClose{
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #FFFFFF;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.popUpText{
+    text-align: center;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.8);
+    padding: 5px 0 5px 0;
+}
+
+.popUpImage{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.projectsImages{
+    margin: 20px;
+    font-size: 0;
+    flex-flow: row wrap;
+    display: flex;
+}
+
+.projectsImages img{
+    width: 40vw;
+    height: 40vw;
+}
+
+.projectsImage{
+    flex: auto;
+    width: 200px;
+    margin: 1vw 2vw;
+    cursor:pointer;
+}
+
+.imageText {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 4px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.profileProjectsImage{
+    cursor:pointer;
+}
+
+div img{
+    width: 100%;
+    height: 80%;
+}
+
+.myButton {
+    box-shadow:inset 0px 1px 3px 0px #404040;
+    background:linear-gradient(to bottom, #666666 5%, #8c8c8c 100%);
+    border-radius:5px;
+    border:1px solid #404040;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:11px 23px;
+    text-decoration:none;
+    text-shadow:0px -1px 0px #2b665e;
+}
+
+.myButton:hover {
+    background:linear-gradient(to bottom, #8c8c8c 5%, #666666 100%);
+}
+
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+
+.dots{
+    margin-top: 15px;
+}
+
+/* SlideShow */
+
+*{
+    box-sizing: border-box;
+}
+.mySlides{
+    display: none;
+}
+img{
+    border-radius: 10px;
+    border: 0px solid #000000;
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 800px;
+    max-height: 500px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    display: inline-block;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+footer{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #333333;
+    color: white;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 600px) {
+    .prev, .next,.text {font-size: 11px}
+
+
+    .p{
+        font-size: 8pt;
+    }
+
+
+    .profile h2{
+        clear: both;
+        text-align: center;
+    }
+    h1{
+        font-size: 30pt;
+    }
+
+    .profile img{
+        margin: 10px auto;
+        float: none;
+    }
+
+    .imgFrame{
+        max-width: 80%;
+        max-height: 600px;
+        position: relative;
+        text-align: center;
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .profile img{
+        width: 400px;
+        height: 400px;
+    }
+
+    .profileProjects{
+        display: inline;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 26pt;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .profile img{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .profileProjects{
+        width: 300px;
+        height: 300px;
+    }
+    
+}

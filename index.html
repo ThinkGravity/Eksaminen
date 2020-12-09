@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hjem</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="navBar">
+            <a href="http://annloaastrup.dk/Eksame/Portfolio.html">Portfolio</a>
+            <a href="http://annloaastrup.dk/Eksame/Mig.html">Om mig</a>
+        </div>
+
+        <div class="main">
+            <div class="topics">
+                <h1>Velkommen!</h1>
+                <div class="imageFrame">
+                    <a href="Mig.html"><img src="images/annlo.jpg" alt="mig"/></a>
+                </div>
+                <h2> Ann-Louise Aastrup <br> Multimediedesigner studerende </h2>
+                <br>
+                <hr>
+            </div>
+
+            <br><br>
+
+            <div id="projekter" class="projekter">
+                <h1> Projekter </h1>
+
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="images/space1.jpg" alt="projekt1">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/linedance1.jpg" alt="projekt2">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/ballet1.jpg" alt="projekt3">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/balletto1.jpg" alt="projekt4">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
+
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                </div>
+            </div>
+
+            <br>
+            <a href="Portfolio.html" class="myButton"> Flere projekter </a>
+
+        </div>
+
+        <footer> Ann-Louise Aastrup - Annlo@aastrup.co.uk</footer>
+        
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1;
+                }
+                if (n < 1) {
+                    slideIndex = slides.length;
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
+    </body>
+</html>
