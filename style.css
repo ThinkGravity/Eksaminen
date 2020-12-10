@@ -8,7 +8,6 @@ body{
 .main{
     color: #ffffff;
     text-align: center;
-    font-size: bold;
     padding: 16px;
     margin-top: 30px;
 }
@@ -20,7 +19,6 @@ body{
     overflow: hidden;
     background-color: #c9c9c9;
     position: absolute;
-    font-size: bold;
     top: 0;
     width: 100%;
     z-index: 1;
@@ -31,7 +29,6 @@ body{
     display: block;
     color: #ffffff;
     text-align: center;
-    font-size: bold;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -139,10 +136,6 @@ hr{
     margin: auto;
     text-align: center;
     display: inline-block;
-}
-
-.infoDiv h2{
-    font-size: bold;
 }
 
 .popUpBox{
@@ -338,7 +331,6 @@ footer{
     text-align: center;
     background-color: #fadce0;
     color: white;
-    font-size: bold;
 }
 
 @keyframes fade {
