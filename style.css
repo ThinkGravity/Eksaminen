@@ -6,9 +6,9 @@ body{
 
 /*Indholds tekst*/
 .main{
-    color: #ffffff;
+    color: #000000;
     text-align: center;
-    text-shadow: #000000 1px 0 3px;;
+    text-shadow: #ffffff 0px 0 2px;;
     padding: 16px;
     margin-top: 30px;
     font-family: 'Open Sans', sans-serif;
@@ -232,7 +232,7 @@ div img{
     box-shadow:inset 0px 1px 3px 0px #2a2a2a;
     background:linear-gradient(to bottom, #9c9c9c 5%, #2a2a2a 100%);
     border-radius:5px;
-    border:1px solid #525252;
+    border:1px solid #000000;
     display:inline-block;
     cursor:pointer;
     color:#ffffff;
@@ -245,7 +245,7 @@ div img{
 
 .myButton:hover {
     background:linear-gradient(to bottom, #2a2a2a 5%, #9c9c9c 100%);
-    color: #8E9EB3;
+    color: #000000;
 }
 
 .myButton:active {
