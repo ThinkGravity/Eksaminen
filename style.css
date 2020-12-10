@@ -1,22 +1,26 @@
 body{
     margin:0;
-    background-color: #ffffff;
+    background-color: #fadce0;
     font-family: Verdana, sans-serif;
 }
 
 /*Indholds tekst*/
 .main{
-    color: #000000;
+    color: #ffffff;
     text-align: center;
+    font-size: bold;
     padding: 16px;
     margin-top: 30px;
 }
 
+
+
 /*Navigationsbar*/
 .navBar{
     overflow: hidden;
-    background-color: #2A2A2A;
-    position: fixed;
+    background-color: #c9c9c9;
+    position: absolute;
+    font-size: bold;
     top: 0;
     width: 100%;
     z-index: 1;
@@ -25,17 +29,23 @@ body{
 .navBar a{
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #ffffff;
     text-align: center;
+    font-size: bold;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
 }
 
 .navBar a:hover{
-    background: #ddd;
-    color: #2A2A2A;
+    background: #fadce0;
+    color: #ffffff;
 }
+
+.navBar a.active {
+    background-color: #fadce0;
+    color: #ffffff;
+  }
 
 .imageFrame{
     max-width: 80%;
@@ -64,6 +74,7 @@ body{
 
 .profile{
     font-size: 12pt;
+    
 }
 
 .profile img{
@@ -85,6 +96,7 @@ body{
 
 .profile p,ul{
     text-align: left;
+    
 }
 
 .profile ul{
@@ -108,7 +120,7 @@ h1{
 footer{
     height: 40px;
     line-height: 40px;
-    background-color: #2A2A2A;
+    background-color: #fadce0;
     text-align: center;
     position: relative;
 }
@@ -116,7 +128,7 @@ footer{
 hr{
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, #FADCE0, white, #FADCE0);
+    background-image: linear-gradient(to right, #ffffff, #8E9EB3, #ffffff);
     clear: both;
 }
 
@@ -127,6 +139,10 @@ hr{
     margin: auto;
     text-align: center;
     display: inline-block;
+}
+
+.infoDiv h2{
+    font-size: bold;
 }
 
 .popUpBox{
@@ -214,11 +230,12 @@ div img{
     height: 80%;
 }
 
+/*Knap*/
 .myButton {
-    box-shadow:inset 0px 1px 3px 0px #404040;
-    background:linear-gradient(to bottom, #666666 5%, #8c8c8c 100%);
+    box-shadow:inset 0px 1px 3px 0px #2a2a2a;
+    background:linear-gradient(to bottom, #9c9c9c 5%, #2a2a2a 100%);
     border-radius:5px;
-    border:1px solid #404040;
+    border:1px solid #525252;
     display:inline-block;
     cursor:pointer;
     color:#ffffff;
@@ -227,11 +244,10 @@ div img{
     font-weight:bold;
     padding:11px 23px;
     text-decoration:none;
-    text-shadow:0px -1px 0px #2b665e;
 }
 
 .myButton:hover {
-    background:linear-gradient(to bottom, #8c8c8c 5%, #666666 100%);
+    background:linear-gradient(to bottom, #2a2a2a 5%, #9c9c9c 100%);
 }
 
 .myButton:active {
@@ -320,8 +336,9 @@ footer{
     height: 40px;
     line-height: 40px;
     text-align: center;
-    background-color: #333333;
+    background-color: #fadce0;
     color: white;
+    font-size: bold;
 }
 
 @keyframes fade {
@@ -373,11 +390,9 @@ footer{
     }
 
     h1{
-        font-size: 26pt;
+        font-size: 26px;
     }
-}
 
-@media screen and (max-width: 500px){
     .profile img{
         width: 300px;
         height: 300px;
