@@ -8,6 +8,7 @@ body{
 .main{
     color: #ffffff;
     text-align: center;
+    text-shadow: #000000 1px 0 3px;;
     padding: 16px;
     margin-top: 30px;
 }
@@ -37,11 +38,13 @@ body{
 .navBar a:hover{
     background: #fadce0;
     color: #ffffff;
+    text-shadow: #F8DF00 1px 0 1px;
 }
 
 .navBar a.active {
     background-color: #fadce0;
     color: #ffffff;
+    text-shadow: #F8DF00 1px 0 1px;
   }
 
 .imageFrame{
@@ -125,7 +128,7 @@ footer{
 hr{
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, #ffffff, #8E9EB3, #ffffff);
+    background-image: linear-gradient(to right, #ffffff, #F8DF00, #ffffff);
     clear: both;
 }
 
@@ -241,6 +244,7 @@ div img{
 
 .myButton:hover {
     background:linear-gradient(to bottom, #2a2a2a 5%, #9c9c9c 100%);
+    color: #8E9EB3;
 }
 
 .myButton:active {
